@@ -34,6 +34,7 @@ Simply run the `.sh` script which contains the execution of treeprofiler to star
 bash run_fig1_example1.sh
 bash run_fig1_example2.sh
 ```
+![TreeProfiler general overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig1_general/fig1_general.png?raw=true)
 
 # Figure 2 Visualization of emapper examples 
 In `fig2_emapper/`， we prepared the data and execution command line to recreate the visualization session in Figure 2
@@ -54,6 +55,8 @@ Or activate the `treeprofiler-desktop`
 treeprofiler-desktop
 ```
 And then click " EggNOG Annotation Example" to start the annotation and visualization interactively
+
+![TreeProfiler emapper  overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig2_emapper/fig2_emapper.png?raw=true)
 
 # Figure 3 Visualization of motus reference tree with habitat relative abundance matrix
 In `fig3_motus_full_habitat/`， we prepared the data and execution command line to recreate the visualization session in Figure 3
@@ -93,7 +96,7 @@ treeprofiler annotate \
 
 ```
 
-
+![TreeProfiler motus overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig3_motus_full_habitat/fig3_motus_full_habitat.png?raw=true)
 
 
 
