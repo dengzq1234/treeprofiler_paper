@@ -8,6 +8,8 @@
 #-o ./
 
 # visualize annotated motus reference tree with taxonomic band colored by ranks, clades colored by ranks, and heatmap of habitat relative abundance matrix
+tar -xvf motusid_full_annotated.nw.tar.gz
+
 treeprofiler plot \
 -t motusid_full_annotated.nw \
 --internal name \
