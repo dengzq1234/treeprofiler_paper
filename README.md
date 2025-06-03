@@ -36,27 +36,44 @@ bash run_fig1_example2.sh
 ```
 ![TreeProfiler general overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig1_general/fig1_general.png?raw=true)
 
-# Figure 2 Visualization of emapper examples 
-In `fig2_emapper/`， we prepared the data and execution command line to recreate the visualization session in Figure 2
+# Figure 2 Visualization of POR_N domain family examples 
+In `fig2_POR_N/`， we prepared the data and execution command line to recreate the visualization session in Figure 2
 
 ```
-cd fig2_emapper/
+cd fig2_POR_N/
 ls
-fig2_emapper.png  nifH.faa.aln  nifH.nw  nifH.out.emapper.annotations  nifH.out.emapper.pfam  run_fig2.sh
+fig2_POR_N.png             mafft_POR_N_trim.tree    out.emapper.pfam
+mafft_POR_N.fa.aln.tar.gz  out.emapper.annotations  run_fig2.sh
 ```
 
+To recreate the annotation and visualization, please run the folloing demo:
+```
+tar -xvf mafft_POR_N.fa.aln.tar.gz
+
+treeprofiler annotate \
+-t mafft_POR_N_trim.tree \
+--emapper-annotation out.emapper.annotations \
+--alignment mafft_POR_N.fa.aln \
+--emapper-pfam out.emapper.pfam \
+--consensus-cutoff 0 \
+--taxon-column name \
+--taxadb ncbi \
+--taxon-delimiter . \
+--taxa-field 0 \
+-o .
+
+treeprofiler plot \
+-t mafft_POR_N_trim_annotated.ete \
+--taxonrectangle-layout \
+--profiling-layout KEGG_ko \
+--domain-layout
+```
 You can choose to executate the visualization via command-line using the bash script `run_fig2.sh`
 ```
 bash run_fig2.sh
 ```
 
-Or activate the `treeprofiler-desktop`
-```
-treeprofiler-desktop
-```
-And then click " EggNOG Annotation Example" to start the annotation and visualization interactively
-
-![TreeProfiler emapper  overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig2_emapper/fig2_emapper.png?raw=true)
+![TreeProfiler emapper  overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig2_POR_N/fig2_POR_N.png?raw=true)
 
 # Figure 3 Visualization of motus reference tree with habitat relative abundance matrix
 In `fig3_motus_full_habitat/`， we prepared the data and execution command line to recreate the visualization session in Figure 3
