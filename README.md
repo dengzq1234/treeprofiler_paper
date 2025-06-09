@@ -1,4 +1,20 @@
-# Fast treeprofiler 2025 demonstration
+# TreeProfiler Figure Demonstration and Reproduction
+
+This repository contains the scripts, data, and instructions required to reproduce all figures from the manuscript:
+
+```
+Ziqi Deng, Ana Hernández-Plaza, Adrián A. Davín, and Jaime Huerta-Cepas.
+"Large-scale phylogenetic profiling of gene and species trees by TreeProfiler"  
+bioRxiv (2023) doi: 10.1101/2023.09.21.558621
+```
+
+This is a companion repository to support figure reproduction. For the TreeProfiler software and documentation, visit the official repo:
+
+🔗 https://github.com/compgenomicslab/TreeProfiler
+
+And tutorial:
+
+https://dengzq1234.github.io/TreeProfiler/
 
 # Installation of conda enviroment
 
@@ -6,6 +22,9 @@
 # create environment
 conda create -n treeprofiler python=3.10
 conda activate treeprofiler
+
+# dependecies for ete4
+conda install conda-forge::gcc
 
 # Install ETE Toolkit v4 for treeprofiler
 pip install "git+https://github.com/etetoolkit/ete.git@ete4_treeprofiler"
