@@ -21,8 +21,8 @@ This repository allows you to **reproduce** all TreeProfiler figures from the ma
 
 Alternatively, if you prefer **not to install or configure any environment**, you can directly **browse the interactive figures online** using the links below:
 
-- [Figure 1A–B Layout Demos](http://138.4.139.25:5030/)
-- [Figure 1C–H Trait Types & Features](http://138.4.139.25:5031/)
+- [Figure 1A–E Layout Demos](http://138.4.139.25:5030/)
+- [Figure 1F–H Trait Types & Features](http://138.4.139.25:5031/)
 - [Figure 2: POR_N Domain Family](http://138.4.139.25:5032/)
 - [Figure 3: mOTUs Abundance Profiles](http://138.4.139.25:5033/)
 
