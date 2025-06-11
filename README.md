@@ -69,7 +69,7 @@ bash run_fig1_example2.sh
 ![TreeProfiler general overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig1_general/fig1_general.png?raw=true)
 
 ## Figure 2 Visualization of POR_N domain family examples 
-In `fig2_POR_N/`， we prepared the data and execution command line to recreate the visualization session in Figure 2
+In `fig2_POR_N/`， we prepared the data and execution command line to recreate the visualization session in Figure 2 of POR_N family phylogenetic tree across 13,297 sequences with taxonomic annotation, KEGG KO profiling and Pfam domain architectures.
 
 ```
 cd fig2_POR_N/
@@ -114,7 +114,7 @@ Once the visualization activated, click the `TaxaRect_superkingdom` and `Taxa_Ev
 ![TreeProfiler emapper  overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig2_POR_N/fig2_POR_N.png?raw=true)
 
 ## Figure 3 Visualization of motus reference tree with habitat relative abundance matrix
-In `fig3_motus_full_habitat/`， we prepared the data and execution command line to recreate the visualization session in Figure 3
+In `fig3_motus_full_habitat/`， we prepared the data and execution command line to recreate the visualization session in Figure 3 of the mOTUs reference taxonomy tree with 124,295 leaves annotated with 51 habitat-specific abundance profiles.
 
 ```
 cd fig3_motus_full_habitat/
