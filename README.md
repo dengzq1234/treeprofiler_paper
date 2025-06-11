@@ -79,6 +79,7 @@ mafft_POR_N.fa.aln.tar.gz  out.emapper.annotations  run_fig2.sh
 ```
 
 To recreate the annotation and visualization, please run the following demo:
+
 ```
 tar -xvf mafft_POR_N.fa.aln.tar.gz
 
@@ -105,6 +106,8 @@ Alternatively, you can run the visualization directly via the included bash scri
 ```
 bash run_fig2.sh
 ```
+
+**Note**: To run the full annotation workflow (including treeprofiler annotate), ensure at least 4 CPUs and 15 GB RAM are available.
 
 Once the visualization activated, click the `TaxaRect_superkingdom` and `Taxa_Evolutionary_events` layouts in control panel to have the same visualization as Figure 2. 
 
@@ -147,6 +150,7 @@ treeprofiler annotate \
 -o ./
 
 ```
+**Note**: Running the full annotation workflow for the large mOTUs tree requires at least 4 CPUs and 30 GB RAM due to the size and complexity of the dataset.
 
 Once the visualization activated, click the `TaxaRect_superkingdom`, `TaxaLCA_phylum` and `Taxa_Evolutionary_events` layouts in control panel to have the same visualization as Figure 3. 
 
