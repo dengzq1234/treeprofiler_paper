@@ -158,7 +158,10 @@ Once the visualization activated, click the `TaxaRect_superkingdom`, `TaxaLCA_ph
 
 
 
+## Supplementary Benchmarking
 
+For reproducing the supplementary figure comparing tree visualization tools (ggtree, iTOL, tvBOT, etc.), see  
+➡️ [`supplementary/README.md`](./supplementary/README.md)
 
 
 
