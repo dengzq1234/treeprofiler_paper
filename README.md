@@ -21,10 +21,10 @@ This repository allows you to **reproduce** all TreeProfiler figures from the ma
 
 Alternatively, if you prefer **not to install or configure any environment**, you can directly **browse the interactive figures online** using the links below:
 
-- [Figure 1A–E Layout Demos](http://138.4.139.25:5030/)
-- [Figure 1F–H Trait Types & Features](http://138.4.139.25:5031/)
-- [Figure 2: POR_N Domain Family](http://138.4.139.25:5032/)
-- [Figure 3: mOTUs Abundance Profiles](http://138.4.139.25:5033/)
+- [Figure 1A–E Layout Demos](https://treeprofiler_ex1.cgmlab.org/)
+- [Figure 1F–H Trait Types & Features](https://treeprofiler_ex2.cgmlab.org/)
+- [Figure 2: POR_N Domain Family](https://treeprofiler_ex3.cgmlab.org/)
+- [Figure 3: mOTUs Abundance Profiles](https://treeprofiler_ex4.cgmlab.org/)
 
 Both options provide full access to all visualizations and annotations described in the manuscript. Choose the one that best suits your needs.
 
