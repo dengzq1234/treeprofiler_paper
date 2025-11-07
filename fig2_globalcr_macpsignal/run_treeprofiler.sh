@@ -1,0 +1,1 @@
+treeprofiler plot -t mcpsignal_globalcr_lca.nw --rectangle-layout heptad_1 d chea-ACF chea-Tfp  chea-F1 chea-F2 chea-F3 chea-F4 chea-F5 chea-F6 chea-F7 chea-F8 chea-F9 chea-F10 chea-F11 chea-F12 chea-F13 chea-F14 chea-F15 chea-F16 chea-F17 chea-Uncat  --taxonclade-layout --color-config color.v2.config  --background-layout collapse_name --textbranch-layout lca
