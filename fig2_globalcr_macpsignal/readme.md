@@ -1,6 +1,11 @@
 # Figure 2 Visualization of MCPsignal domain family examples 
 In `fig2_globalcr_macpsignal/`， we prepared the data and execution command line to recreate the visualization session in Figure 2 of MCPsignal family phylogenetic tree > 400,000 sequences with taxonomic annotation, KEGG KO profiling and Pfam domain architectures.
 
+
+## Interactive session
+[Figure 2: Global MCPsignal domain family](https://treeprofiler_ex3.cgmlab.org/)
+
+## Execution in local environment
 ```
 cd fig2_globalcr_macpsignal/
 ls
