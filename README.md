@@ -23,7 +23,7 @@ Alternatively, if you prefer **not to install or configure any environment**, yo
 
 - [Figure 1A–E Layout Demos](https://treeprofiler_ex1.cgmlab.org/)
 - [Figure 1F–H Trait Types & Features](https://treeprofiler_ex2.cgmlab.org/)
-- [Figure 2: POR_N Domain Family](https://treeprofiler_ex3.cgmlab.org/)
+- [Figure 2: Global MCPsignal domain family](https://treeprofiler_ex3.cgmlab.org/)
 - [Figure 3: mOTUs Abundance Profiles](https://treeprofiler_ex4.cgmlab.org/)
 
 Both options provide full access to all visualizations and annotations described in the manuscript. Choose the one that best suits your needs.
@@ -68,38 +68,27 @@ bash run_fig1_example2.sh
 ```
 ![TreeProfiler general overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig1_general/fig1_general.png?raw=true)
 
-## Figure 2 Visualization of POR_N domain family examples 
-In `fig2_POR_N/`， we prepared the data and execution command line to recreate the visualization session in Figure 2 of POR_N family phylogenetic tree across 13,297 sequences with taxonomic annotation, KEGG KO profiling and Pfam domain architectures.
+## Figure 2 Visualization of MCPsignal domain family examples 
+In `fig2_globalcr_macpsignal/`， we prepared the data and execution command line to recreate the visualization session in Figure 2 of MCPsignal family phylogenetic tree > 400,000 sequences with taxonomic annotation, KEGG KO profiling and Pfam domain architectures.
 
 ```
-cd fig2_POR_N/
+cd fig2_globalcr_macpsignal/
 ls
-fig2_POR_N.png             mafft_POR_N_trim.tree    out.emapper.pfam
-mafft_POR_N.fa.aln.tar.gz  out.emapper.annotations  run_fig2.sh
+color.v2.config         mcpsignal_globalcr_lca.nw         run_fig2.sh
+globalCR_38H48H40H.png  mcpsignal_globalcr_lca.nw.tar.gz
 ```
 
 To recreate the annotation and visualization, please run the following demo:
 
 ```
-tar -xvf mafft_POR_N.fa.aln.tar.gz
+tar -xvf mcpsignal_globalcr_lca.nw.tar.gz
 
-treeprofiler annotate \
--t mafft_POR_N_trim.tree \
---emapper-annotation out.emapper.annotations \
---alignment mafft_POR_N.fa.aln \
---emapper-pfam out.emapper.pfam \
---consensus-cutoff 0 \
---taxon-column name \
---taxadb ncbi \
---taxon-delimiter . \
---taxa-field 0 \
--o .
-
-treeprofiler plot \
--t mafft_POR_N_trim_annotated.ete \
---taxonrectangle-layout \
---profiling-layout KEGG_ko \
---domain-layout
+treeprofiler plot -t mcpsignal_globalcr_lca.nw \
+--rectangle-layout heptad_1 d chea-ACF chea-Tfp  chea-F1 chea-F2 chea-F3 chea-F4 chea-F5 chea-F6 chea-F7 chea-F8 chea-F9 chea-F10 chea-F11 chea-F12 chea-F13 chea-F14 chea-F15 chea-F16 chea-F17 chea-Uncat \
+--taxonclade-layout \
+--color-config color.v2.config  \
+--background-layout collapse_name \
+--textbranch-layout lca
 ```
 
 Alternatively, you can run the visualization directly via the included bash script:
@@ -109,9 +98,7 @@ bash run_fig2.sh
 
 **Note**: To run the full annotation workflow (including treeprofiler annotate), ensure at least 4 CPUs and 15 GB RAM are available.
 
-Once the visualization activated, click the `TaxaRect_superkingdom` and `Taxa_Evolutionary_events` layouts in control panel to have the same visualization as Figure 2. 
-
-![TreeProfiler emapper  overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig2_POR_N/fig2_POR_N.png?raw=true)
+![TreeProfiler emapper  overview](https://github.com/dengzq1234/treeprofiler_paper/blob/main/fig2_globalcr_macpsignal/globalCR_38H48H40H.png?raw=true)
 
 ## Figure 3 Visualization of motus reference tree with habitat relative abundance matrix
 In `fig3_motus_full_habitat/`， we prepared the data and execution command line to recreate the visualization session in Figure 3 of the mOTUs reference taxonomy tree with 124,295 leaves annotated with 51 habitat-specific abundance profiles.
